@@ -6,7 +6,9 @@ You can use WMD to evaluate one caption or diverse captions for one image. Given
 2. Download the tokenized MSCOCO dataset and put it in the *data/files* folder.
     1. You can [download here](https://drive.google.com/drive/folders/1qm85vYouLJMYTjESscglcKVZQDASMuck) (download all 3 files).
 3. Use your method to generate captions/caption and save as a json file, the format of which must be the same as *results/results_bs3.json* (each image has one caption) or *results/merge_results10.json* (each image has 10 captions).
-4. Run the command ```python accuracy_WMD.py --results_file ../results/merge_results10.json --score_file ../results/merge_results10_score.json --num_captions 10 --exp 1```
+4. Run the command 
+    1. ```cd ./evaluation```
+    2. ```python accuracy_WMD.py --results_file ../results/merge_results10.json --score_file ../results/merge_results10_score.json --num_captions 10 --exp 1```
 ## References
 * Matt J. Kusner et. al., From Word Embeddings To Document Distances. ICML, 2015.
 * Mert Kilickaya et. al., Re-evaluating Automatic Metrics for Image Captioning. EACL, 2017.
